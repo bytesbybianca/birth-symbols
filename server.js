@@ -14,10 +14,10 @@ app.get('/api', (req, res) => {
     res.json(symbols)
 })
 
-app.get('/api/:month', (req, res) => {
+app.get('/api/month/:month', (req, res) => {
     const birthMonth = req.params.month.toLowerCase()
-    if(symbols[birthMonth]) {
-        res.json(symbols[birthMonth])
+    if(symbols.byMonth[birthMonth]) {
+        res.json(symbols.byMonth[birthMonth])
     } else {
         throw new Error('Resource not found.');
     }
