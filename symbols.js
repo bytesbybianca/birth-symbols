@@ -256,30 +256,86 @@ const symbols = {
                 }
             ]
         },
-    }
-    // 'lowercaseMonth': {
-    //     'month': 'TitleMonthHere',
-    //     'birthstone': [
-    //         { 
-    //             'stone': 'stoneNameHere',
-    //             'stone_wiki': 'stoneWikiHere',
-    //         },
-    //         {
-    //             'stone': 'stoneNameHere',
-    //             'stone_wiki': 'stoneWikiHere',
-    //         }
-    //     ],
-    //     'birthflower': [
-    //         { 
-    //             'flower': 'flowerNameHere',
-    //             'flower_wiki': 'flowerWikiHere',
-    //         },
-    //         { 
-    //             'flower': 'flowerNameHere',
-    //             'flower_wiki': 'flowerWikiHere',
-    //         }
-    //     ]
-    // },
+    },
+    'byCountry': {
+        'afghanistan': {
+            'country': 'Afghanistan',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Afghanistan',
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Pomegranate',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Pomegranate',
+                },
+            ]
+        },
+        'albania': {
+            'country': 'Albania',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Albania',
+            'national_colors': [
+                'nationalColorsHere',
+                'nationalColorsHere',
+                'nationalColorsHere',
+            ],
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Cherry',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Cherry',
+                },
+            ]
+        },
+        'algeria': {
+            'country': 'Algeria',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Algeria',
+            'national_colors': [
+                'green',
+                'white',
+                'red',
+            ],
+            'national_animal': [
+                { 
+                    'animal': 'Fennec fox',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Fennec_fox',
+                },
+            ],
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Cherry',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Cherry',
+                },
+            ]
+        },
+        'angola': {
+            'country': 'Angola',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Angola',
+            'national_colors': [
+                'red',
+                'black',
+                'yellow',
+            ],
+            'national_animal': [
+                { 
+                    'animal': 'Red-crested turaco',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Red-crested_turaco',
+                },
+            ],
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Palm',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Arecaceae',
+                },
+            ]
+        },
+        'anguilla': {
+            'country': 'Anguilla',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Anguilla',
+            'national_animal': [
+                { 
+                    'animal': 'Zenaida dove',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Zenaida_dove',
+                },
+            ],
+        },
+    },
 };
 
 exports.symbols = symbols;
