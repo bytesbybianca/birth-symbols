@@ -10,16 +10,37 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
+app.get('/css/style.css', (req, res) => {
+    res.sendFile(__dirname + '/css/style.css')
+})
+
+app.get('/css/normalize.css', (req, res) => {
+    res.sendFile(__dirname + '/css/normalize.css')
+})
+
+app.get('/js/main.js', (req, res) => {
+    res.sendFile(__dirname + '/js/main.js')
+})
+
 app.get('/api', (req, res) => {
     res.json(symbols)
 })
 
-app.get('/api/:month', (req, res) => {
+app.get('/api/month/:month', (req, res) => {
     const birthMonth = req.params.month.toLowerCase()
-    if(symbols[birthMonth]) {
-        res.json(symbols[birthMonth])
+    if(symbols.byMonth[birthMonth]) {
+        res.json(symbols.byMonth[birthMonth])
     } else {
-        throw new Error('Resource not found.');
+        throw new Error('Month not found.');
+    }
+})
+
+app.get('/api/country/:country', (req, res) => {
+    const birthPlace = req.params.country.toLowerCase()
+    if(symbols.byCountry[birthPlace]) {
+        res.json(symbols.byCountry[birthPlace])
+    } else {
+        throw new Error('Country not found.');
     }
 })
 
