@@ -19,7 +19,16 @@ app.get('/api/month/:month', (req, res) => {
     if(symbols.byMonth[birthMonth]) {
         res.json(symbols.byMonth[birthMonth])
     } else {
-        throw new Error('Resource not found.');
+        throw new Error('Month not found.');
+    }
+})
+
+app.get('/api/country/:country', (req, res) => {
+    const birthPlace = req.params.country.toLowerCase()
+    if(symbols.byCountry[birthPlace]) {
+        res.json(symbols.byCountry[birthPlace])
+    } else {
+        throw new Error('Country not found.');
     }
 })
 
