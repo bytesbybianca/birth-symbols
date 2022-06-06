@@ -10,27 +10,81 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
-img{
-  display: block;
-  margin: 0 auto;
+html, body * {
+  margin: 0;
 }
 
 body {
-  background-color: pink;
+  background-color: #fff1e6;
+  color: #826e5a;
+  font-size: 1.15rem;
+}
+
+header {
+  height: 20vh;
+  background-color: #826e5a;
+  color: #eddcd2;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.wrapper {
+  max-width: 75vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+span {
+  padding: 0 .25rem;
+}
+
+.route {
+  display: inline-block;
+  width: 15rem;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.description {
+  display: inline-block;
+  width: 30rem;
+  text-align: left;
+  background-color: #f3e5db;
+  padding: .1rem .5rem;
+}
+
+.line * {
+  vertical-align: top;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+code {
+  background-color: #8e8277;
+  color: #fff1e6;
+  border-radius: 5px;
+  padding: .075rem;
 }
 
-#street-view {
-  height: 70%;
-  filter: invert(1)
+a {
+  text-decoration: none;
+  color: #608844;
+}
+
+a:hover {
+  color: #acb6a5;
+  transition: all 0.5s ease-out;
 }

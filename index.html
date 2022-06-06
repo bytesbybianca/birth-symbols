@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Symbols API</title>
+    <title>Birth Symbols API</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-    <h1>Symbols API</h1>
+    <header>
+        <h1>Welcome to the Birth Symbols API</h1>
+    </header>
+    <div class="wrapper">
+        <p>
+            Use these routes to request data on birth month and place symbols.
+        </p>
+        <div class="line">
+            <span class="route"><code>/api/</code></span>
+            <span class="description">
+                to view birth stones and flowers for all months and <br>
+                national colors, animal, and fruit for all countries
+            </span>
+        </div>
+        <div class="line">
+            <span class="route"><code>/api/month/:month</code></span>
+            <span class="description">
+                to view a birth stone and flower for specified month
+            </span>
+        </div>
+        <div class="line">
+            <span class="route"><code>/api/country/:country</code></span>
+            <span class="description">
+                to view national colors, animal, and fruit for specified country
+            </span>
+        </div>
+        <footer>
+            API created by <a href="https://twitter.com/bytesbybianca">Bianca</a>. Visit this project's <a href="https://github.com/bytesbybianca/birth-symbols">GitHub repo</a> to see the code.
+        </footer>
+    </div> 
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
