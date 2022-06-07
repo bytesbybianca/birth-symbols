@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birth Symbols API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
 </head>
@@ -14,25 +17,31 @@
     </header>
     <div class="wrapper">
         <p>
-            Use these routes to request data on birth month and place symbols.
+            Use these routes to request data on birth month and birth place symbols.
         </p>
+        <div class="title line">
+            <span class="route"><code>Routes</code></span>
+            <span class="description">
+                What they do
+            </span>
+        </div>
         <div class="line">
             <span class="route"><code>/api/</code></span>
             <span class="description">
-                to view birth stones and flowers for all months and <br>
+                get data on birth stones and flowers for all months and <br>
                 national colors, animal, and fruit for all countries
             </span>
         </div>
         <div class="line">
             <span class="route"><code>/api/month/:month</code></span>
             <span class="description">
-                to view a birth stone and flower for specified month
+                get data on a birth stone and flower for specified month
             </span>
         </div>
         <div class="line">
             <span class="route"><code>/api/country/:country</code></span>
             <span class="description">
-                to view national colors, animal, and fruit for specified country
+                get data on national colors, animal, and fruit for specified country
             </span>
         </div>
         <footer>
