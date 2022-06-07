@@ -24,14 +24,15 @@ header {
   height: 20vh;
   background-color: #826e5a;
   color: #eddcd2;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Yeseva One', cursive;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .wrapper {
@@ -41,7 +42,7 @@ h1 {
 }
 
 .wrapper * {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Overlock', cursive;
 }
 
 p {
@@ -99,7 +100,7 @@ a:hover {
 }
 
 .title * {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   text-decoration: underline #dad3ca;
   background-color: initial;
   color: #8e8277;
