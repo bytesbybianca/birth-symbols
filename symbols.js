@@ -361,6 +361,32 @@ const symbols = {
                     'fruit_wiki': 'https://en.wikipedia.org/wiki/Pineapple',
                 },
             ]
+        },
+        'argentina': {
+            'country': 'Argentina',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Argentina',
+            'national_animal': [
+                { 
+                    'animal': 'Rufous hornero',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Rufous_hornero',
+                },
+            ],
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Apple',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Apple',
+                },
+            ]
+        },
+        'armenia': {
+            'country': 'Armenia',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Armenia',
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Apricot',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Apricot',
+                },
+            ]
         }, // country end
     },
 };
