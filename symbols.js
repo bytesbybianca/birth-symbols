@@ -293,7 +293,7 @@ const symbols = {
             ],
             'national_animal': [
                 { 
-                    'animal': 'Fennec fox',
+                    'animal_name': 'Fennec fox',
                     'animal_wiki': 'https://en.wikipedia.org/wiki/Fennec_fox',
                 },
             ],
@@ -314,7 +314,7 @@ const symbols = {
             ],
             'national_animal': [
                 { 
-                    'animal': 'Red-crested turaco',
+                    'animal_name': 'Red-crested turaco',
                     'animal_wiki': 'https://en.wikipedia.org/wiki/Red-crested_turaco',
                 },
             ],
@@ -330,7 +330,7 @@ const symbols = {
             'country_wiki': 'https://en.wikipedia.org/wiki/Anguilla',
             'national_animal': [
                 { 
-                    'animal': 'Zenaida dove',
+                    'animal_name': 'Zenaida dove',
                     'animal_wiki': 'https://en.wikipedia.org/wiki/Zenaida_dove',
                 },
             ],
@@ -340,17 +340,17 @@ const symbols = {
             'country_wiki': 'https://en.wikipedia.org/wiki/Antigua_and_Barbuda',
             'national_animal': [
                 { 
-                    'animal': 'European fallow deer',
+                    'animal_name': 'European fallow deer',
                     'animal_wiki': 'https://en.wikipedia.org/wiki/European_fallow_deer',
                     'animal_type': 'national animal',
                 },
                 { 
-                    'animal': 'Frigate',
+                    'animal_name': 'Frigate',
                     'animal_wiki': 'https://en.wikipedia.org/wiki/Magnificent_frigatebird',
                     'animal_type': 'national bird',
                 },
                 { 
-                    'animal': 'Hawksbill turtle',
+                    'animal_name': 'Hawksbill turtle',
                     'animal_wiki': 'https://en.wikipedia.org/wiki/Hawksbill_sea_turtle',
                     'animal_type': 'national sea creature',
                 },
@@ -367,7 +367,7 @@ const symbols = {
             'country_wiki': 'https://en.wikipedia.org/wiki/Argentina',
             'national_animal': [
                 { 
-                    'animal': 'Rufous hornero',
+                    'animal_name': 'Rufous hornero',
                     'animal_wiki': 'https://en.wikipedia.org/wiki/Rufous_hornero',
                 },
             ],
@@ -385,6 +385,54 @@ const symbols = {
                 { 
                     'fruit_name': 'Apricot',
                     'fruit_wiki': 'https://en.wikipedia.org/wiki/Apricot',
+                },
+            ]
+        },
+        'australia': {
+            'country': 'Australia',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Australia',
+            'national_animal': [
+                { 
+                    'animal_name': 'Red kangaroo',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Red_kangaroo',
+                    'animal_type': 'national animal',
+                },
+                { 
+                    'animal_name': 'Emu',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Emu',
+                    'animal_type': 'national bird',
+                },
+            ],
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Riberry',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Syzygium_luehmannii',
+                },
+            ]
+        },
+        'austria': {
+            'country': 'Austria',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Austria',
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Apple',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Apple',
+                },
+            ]
+        },
+        'azerbaijan': {
+            'country': 'Azerbaijan',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Azerbaijan',
+            'national_animal': [
+                { 
+                    'animal_name': 'Karabakh horse',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Karabakh_horse',
+                },
+            ],
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Pomegranate',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Pomegranate',
                 },
             ]
         }, // country end
