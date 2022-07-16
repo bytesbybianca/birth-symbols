@@ -335,6 +335,59 @@ const symbols = {
                 },
             ],
         },
+        'antigua and barbuda': {
+            'country': 'Antigua and Barbuda',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Antigua_and_Barbuda',
+            'national_animal': [
+                { 
+                    'animal': 'European fallow deer',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/European_fallow_deer',
+                    'animal_type': 'national animal',
+                },
+                { 
+                    'animal': 'Frigate',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Magnificent_frigatebird',
+                    'animal_type': 'national bird',
+                },
+                { 
+                    'animal': 'Hawksbill turtle',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Hawksbill_sea_turtle',
+                    'animal_type': 'national sea creature',
+                },
+            ],
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Pineapple',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Pineapple',
+                },
+            ]
+        },
+        'argentina': {
+            'country': 'Argentina',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Argentina',
+            'national_animal': [
+                { 
+                    'animal': 'Rufous hornero',
+                    'animal_wiki': 'https://en.wikipedia.org/wiki/Rufous_hornero',
+                },
+            ],
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Apple',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Apple',
+                },
+            ]
+        },
+        'armenia': {
+            'country': 'Armenia',
+            'country_wiki': 'https://en.wikipedia.org/wiki/Armenia',
+            'national_fruit': [
+                { 
+                    'fruit_name': 'Apricot',
+                    'fruit_wiki': 'https://en.wikipedia.org/wiki/Apricot',
+                },
+            ]
+        }, // country end
     },
 };
 
