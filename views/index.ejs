@@ -12,42 +12,78 @@
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
+<%# defining variables to format todays date for use in date input%>
+<% let today = new Date() %>
+<% const year = today.getFullYear(); %>
+<% let month = today.getMonth() + 1; %>
+<% let day = today.getDate(); %>
+
+<% if (day < 10) {
+    day = '0' + day;
+ }
+ 
+ if (month < 10) {
+    month = '0' + month;
+ } %>
+
+<% let todayFormatted = `${year}-${month}-${day}` %>
+
     <header>
         <h1>Welcome to the Birth Symbols API</h1>
     </header>
     <div class="wrapper">
-        <p>
-            Use these routes to request data on birth month and birth place symbols.
-        </p>
-        <div class="title line">
-            <span class="route">Routes</span>
-            <span class="description">
-                What they do
-            </span>
-        </div>
-        <div class="line">
-            <span class="route"><code>/api/</code></span>
-            <span class="description">
-                get data on birth stones and flowers for all months and <br>
-                national colors, animal, and fruit for all countries
-            </span>
-        </div>
-        <div class="line">
-            <span class="route"><code>/api/month/:month</code></span>
-            <span class="description">
-                get data on a birth stone and flower for specified month
-            </span>
-        </div>
-        <div class="line">
-            <span class="route"><code>/api/country/:country</code></span>
-            <span class="description">
-                get data on national colors, animal, and fruit for specified country
-            </span>
-        </div>
+       <section class="routes-container">
+        <h2>Routes</h2>
+            <p>
+                Use these routes to request data on birth month and birth place symbols.
+            </p>
+            <div class="title line">
+                <span class="route">Routes</span>
+                <span class="description">
+                    What they do
+                </span>
+            </div>
+            <div class="line">
+                <span class="route"><code>/api/</code></span>
+                <span class="description">
+                    get data on birth stones and flowers for all months and <br>
+                    national colors, animal, and fruit for all countries
+                </span>
+            </div>
+            <div class="line">
+                <span class="route"><code>/api/month/:month</code></span>
+                <span class="description">
+                    get data on a birth stone and flower for specified month
+                </span>
+            </div>
+            <div class="line">
+                <span class="route"><code>/api/country/:country</code></span>
+                <span class="description">
+                    get data on national colors, animal, and fruit for specified country
+                </span>
+            </div>
+       </section>
+       <section class="demo-container">
+           <h2>Demo below</h2>
+           <label for="birthdate-select">Birthdate:</label>
+            <input type="date" id="birthdate-select" name="birthdate" value="" min="" max="<%= todayFormatted %>">
+            
+            <label for="birthplace-select">Birthplace:</label>
+            <select name="birthplace" id="birthplace-select">
+                <option selected="true" value="" disabled>Select a country</option>
+                <% for(const keys in symbols.byCountry) { %>
+                    <option value="<%= keys %>"><%= symbols.byCountry[keys].country %></option>
+                <% } %>
+            </select>
+            <div class="demo-display">
+                <div class="demo-month"></div>
+                <div class="demo-country"></div>
+            </div>
+       </section>
         <footer>
             API created by <a href="https://twitter.com/bytesbybianca">Bianca</a>. Visit this project's <a href="https://github.com/bytesbybianca/birth-symbols">GitHub repo</a> to see the code.
         </footer>
     </div> 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

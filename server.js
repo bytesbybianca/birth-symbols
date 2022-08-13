@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.render('index.ejs')
+    res.render('index.ejs', {symbols})
 })
 
 app.get('/api', (req, res) => {
